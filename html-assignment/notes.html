@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I learned in Class</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+        What I learned in Class?
+        </h1>
+    </header>
+    
+    <ul>
+        <li> <a href="#1">1. Create a form</a> </li>
+        <li> <a href="#2">2. Radio form and Create a button</a> </li>
+        <li> <a href="#3">3. Import images</a> </li>
+        <li> <a href="#4">4. Number form with min, max and step</a> </li>
+        <li> <a href="#5">5. id navigation</a> </li>
+    </ul>
+
+<h2 id="1">1. Create a form</h2>
+    <form action="notes.html" method="post">
+        <label for="example">Example: </label>
+        <input id="example" type="text" name="example" placeholder="Text area">
+    </form>
+    <p>A form that have text area.</p>    
+
+
+<h2 id="2">2. Radio form and Create a button</h2>
+    <form action="notes.html" method="get">
+        <label for="little">100-300</label>
+        <input type="radio" id="little" name="range" value="100-300">
+        <br>
+        <label for="some">400-600</label>
+        <input type="radio" id="some" name="range" value="400-600" checked>
+        <br>
+        <label for="alot">700-900</label>
+        <input type="radio" id="alot" name="range" value="700-900">
+        <button type="submit">Send</button>
+    </form>
+    <p>A submit button in a radio form with get method.</p>
+
+<h2 id="3">3. Import images</h2>
+    <img src="images/coffee-shop.jpg" alt="Myself" title="Myself" width="300" height="169">
+    <p>Here is a 300 width x 169 height, 16 : 9 photo.</p>
+
+<h2 id="4">4. Number form with min, max and step</h2> 
+    <form action="notes.html" method="get">
+    <label for="quantity">Quantity: </label>
+    <input type="number" name="quantity" id="quantity" min="400" max="800" step="50" placeholder="400-800">
+    </form>
+    <p>Min and max attribites are 400-800. Step attribute is 50.</p>
+
+<h2 id="5">5. id navigation</h2>
+    <ul>
+        <li> <a href="#first">Paragraph 1</a> </li>
+        <li> <a href="#second">Paragraph 2</a> </li>
+    </ul>
+
+    <h3 id="first">Click Paragraph 1 to get here</h3>
+        <p>Hello Paragraph 1</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    <h3 id="second">Click Paragraph 2 to get here</h3>
+        <p>Hello Paragraph 2</p>
+
+
+
+
+</body>
+</html>
