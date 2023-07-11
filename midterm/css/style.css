@@ -157,7 +157,7 @@ html {
     cursor: pointer;
   }
 
-  .send-button #button {
+  .send-button, #button {
     display: block;
   }
   
