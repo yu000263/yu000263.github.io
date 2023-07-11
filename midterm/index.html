@@ -62,29 +62,27 @@
             <section>
                 <h3 id="contact">Contact to learn more</h3>
                 <div class="box">
-                    <form action="#" method="post" class="input-parent">
+                    <form action="contactme.php" method="post" class="input-parent">
                         <label for="yourname">Your Name</label>
-                        <input type="text" id="yourname" class="input-child">
+                        <input type="text" id="yourname" class="input-child" name="name">
         
                         <label for="youremail">Your Email</label>
-                        <input type="text" id="youremail" class="input-child">
+                        <input type="email" id="youremail" class="input-child" name="email">
         
                         <label for="yourmessage">Your Message</label>
-                        <textarea id="yourmessage" class="input-child"></textarea> 
-                    </form>
-        
+                        <textarea id="yourmessage" class="input-child" name="message"></textarea> 
+                    
                     <h4>Would you like to pet the Beagle Dog?</h4>
-                    <form action="#" method="post">
                         <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="yes" value="yes">
+                        <input type="radio" id="yes" name="options" value="yes">
         
                         <label for="no">No</label>
-                        <input type="radio" id="no" name="yes" value="no">
+                        <input type="radio" id="no" name="options" value="no">
         
                         <label for="maybe">Maybe</label>
-                        <input type="radio" id="maybe" name="yes" value="maybe">      
-                    </form>
-                    <button class="send-button">send</button>
+                        <input type="radio" id="maybe" name="options" value="maybe">      
+                        <input class="send-button" type="submit" value="SEND" id="button">
+                </form>
                 </div>
             </section>
         </main>

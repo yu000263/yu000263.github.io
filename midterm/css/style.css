@@ -156,6 +156,10 @@ html {
     transition-duration: 0.4s;
     cursor: pointer;
   }
+
+  .send-button #button {
+    display: block;
+  }
   
   .send-button:hover {
     background-color: #7D6F06;
