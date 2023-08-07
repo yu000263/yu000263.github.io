@@ -22,6 +22,35 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
+
+  h1{
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  h2{
+    font-size: 3rem;
+    font-weight:bolder;
+  }
+
+  h3{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  h5{
+    font-size: 1.2rem;
+    font-weight:bolder;
+  }
+
+  /* Wrapper width */
+
+  .wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+  }
+
   
 /* Header */
 header {
@@ -98,7 +127,7 @@ header {
     width: 75%;
     height: 75%;
     text-align: left;
-    color: white;
+    color: #1c1c1c;
     z-index: 1; 
   }
   
@@ -229,7 +258,7 @@ header {
   
   /* Services Section */
   .services {
-    background-color: #f9f8f2;
+    background-color: #ddb260;
     padding: 30px;
   }
   
@@ -274,7 +303,7 @@ header {
   }
   
   .serviceboxes button:hover {
-    background-color: #f2ae4e;
+    background-color: #ddb260;
     color: #591918;
   }
   

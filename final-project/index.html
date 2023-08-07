@@ -12,13 +12,13 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="wrapper container">
           <div class="header-menu">
-            <div class="logo">
-              <img src="./images/logo.png" alt="logo">
+              <img src="./images/logo.png" alt="logo" class="logo">
             </div>
+            <!-- Create a responsive navigation bar with flexbox -->
             <nav>
-              <ul>
+              <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Service</a></li>
@@ -29,7 +29,7 @@
             <form>
               <input type="search" id="search" name="search" placeholder="Search">
               <button type="submit" class="search-button">
-                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="magnifier"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
               </button>
             </form>
           </div>
@@ -39,18 +39,21 @@
 
     <main>
         <!-- Welcome -->
-            <section class="welcome">
-              <div class="welcome-content">
-                <h1>“A Vision Transformed into Every Dish, uncover the Secrets of Authentic Japanese Cuisine at Asahina Sushi”</h1>
-                <p>Our company vision is to redefine the sushi experience with unmatched luxury, culinary expertise, and a commitment to customer satisfaction. Indulge in Omasake-style sushi and sake pairing, embracing authentic flavors and traditions of Japan.</p>
-                <button class="connect">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+        <!-- Add a background image in CSS -->
+            <section id="banner" class="welcome">
+              <div class="wrapper">
+                <h1>Welcome to Asahina Sushi</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur laudantium blanditiis distinctio maiores sed molestiae corrupti aperiam, eligendi repellendus beatae magni voluptas tempora. Odio sapiente suscipit ipsam natus porro!</p>
+                <button class="connect">Book Now<i class="fa-solid fa-caret-right"></i></button>
               </div>
-              <img src="images/banner.jpg" alt="banner">
+              <!-- <img src="images/banner.jpg" alt="banner"> -->
             </section>
 
         <!-- About -->
-        <section class="about" style="background-color:#ffe6ac;">
-            <div class="wrapper-about">
+        <!-- Float the image to the left -->
+        <section class="about" style="background: color #ddb260;">
+            <div class="wrapper aboutus">
+                <div class="float">
                     <img src="images/welcome.jpg" alt="about us">
                 </div>
                 <div class="abouttext">
@@ -62,8 +65,9 @@
         </section>
 
         <!-- Services -->
-        <section class="our-services">
-            <div class="services">
+        <!-- Grid-based layout -->
+        <section class="wrapper">
+            <div id="services" class="services">
                 <h2>Our Services</h2>
                 <div class="serviceboxes">
                     <div class="reservations">
@@ -108,26 +112,24 @@
 
         <!-- Vision -->
         <section class="vision">
-            <div class="vision-banner">
+            <div class="wrapper">
                 <h3>Our Vision</h3>
-                <!-- Set the photo as a background image -->
+                <!-- Add a background images in CSS -->
                 <p>Our company vision is to redefine the sushi experience with unmatched luxury, culinary expertise, and a commitment to customer satisfaction. Indulge in Omasake-style sushi and sake pairing, embracing authentic flavors and traditions of Japan.</p>
-                <button>Learn More <i class="fa-solid fa-caret-right"></i></button>
+                <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
             </div>
         </section>
 
         <!-- Team -->
-        <section id="team" class="team">
+        <div class="wrapper">
                 <h2>Our Team</h2>
-                <div class="teams">
-                    <div class="team-member">
+                    <div id="team" class="team-member">
                         <img src="images/chef1.jpg" alt="chef1">
                         <div class="chefbio">
                             <h3>John Doe</h3>
                             <h5>CEO and Co-owner</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore voluptate perferendis ipsam sapiente blanditiis at vero doloribus et itaque. Quisquam ipsum voluptatem consectetur, eligendi repudiandae unde magnam nostrum iure?</p>
                         </div>
-                    </div>
                     <div class="team-member">
                         <img src="images/chef2.jpg" alt="chef2">
                         <div class="chefbio">
@@ -137,19 +139,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- Contact -->
         <section id="contact-us" class="contact-us">
-            <div class="contact">
+            <div class="wrapper">
                 <h2>Contact Us</h2>
                 <div class="info">
                     <div class="message">
                         <h3>Send us a message</h3>
                         <form action="form" action="na.php" method="post">
                             <label for="name">Full Name</label>
-                            <input type="text" id="fullname">
+                            <input type="text" id="name">
 
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email">
@@ -185,7 +186,7 @@
                     </div>
                     <div class="location">
                         <h3>Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044936!2d-75.75712548465943!3d45.34993154908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680820783604!5m2!1szh-CN!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.9510236313886!2d-75.7600750878677!3d45.39015877095225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06aa26f9cced%3A0xb3ee701c64b0a746!2s416%20Richmond%20Rd%2C%20Ottawa%2C%20ON%20K2A%204H7!5e0!3m2!1sen!2sca!4v1691449164245!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
