@@ -57,6 +57,46 @@ header {
     background-color: #1c1c1c;
     padding: 20px;
   }
+
+  .find {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddb260;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 200px;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-button {
+    border: none;
+    outline: none;
+    background-color: #ddb260;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.search-button:hover {
+    background-color: #d49d3e;
+}
+
+.bi-search {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
   
   .container {
     display: flex;
@@ -110,7 +150,13 @@ header {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
+
   
   .welcome img {
     width: 100%;
@@ -239,7 +285,7 @@ header {
   
   /* About section mobile-sized screens */
   @media screen and (max-width: 767px) {
-    .wrapper-about {
+    .wrapper {
       flex-direction: column;
       gap: 10px; 
     }
@@ -436,6 +482,16 @@ header {
   .business-hour th {
     background-color: #591918;
     color: #f9f8f2;
+  }
+
+  .location{
+    grid-area: location;
+    text-align: left;
+  }
+
+  .location iframe{
+    width: 98%;
+    height: 86%;
   }
   
   /* Footer */
