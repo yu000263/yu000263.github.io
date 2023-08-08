@@ -414,8 +414,10 @@ nav form input[type="search"] {
   align-items: center;
 }
 
-.chefbio {
+.chefbio .chefbio2 {
   flex-grow: 1;
+  color: #1c1c1c;
+  padding: 20px 5px;
 }
 
 .team-member h3 {
