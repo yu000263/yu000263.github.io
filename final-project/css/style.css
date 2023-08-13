@@ -46,6 +46,7 @@ h5 {
   font-size: 1.5rem;
 }
 
+
 /* Wrapper width */
 .wrapper {
   margin: 0 auto;
@@ -63,10 +64,12 @@ header {
   text-align: center;
 }
 
-.navlist li {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #001d2e;
+
+.navlist a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 28px;
 }
 
 nav ul {
@@ -303,6 +306,7 @@ nav form input[type="search"] {
   cursor: pointer;
   margin-left: 10px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .serviceboxes button:hover {
@@ -333,6 +337,7 @@ nav form input[type="search"] {
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 .vision button:hover {
@@ -382,7 +387,7 @@ nav form input[type="search"] {
 }
 
 .info {
-  gap: 60px;
+  gap: 80px;
 }
 
 .message form {
@@ -391,7 +396,7 @@ nav form input[type="search"] {
 }
 
 .message label {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -413,6 +418,7 @@ nav form input[type="search"] {
   padding: 10px 20px;
   cursor: pointer;
   width: 100px;
+  border-radius: 5px;
 }
 
 .message button:hover {
@@ -423,7 +429,7 @@ nav form input[type="search"] {
 .business-hour table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
@@ -464,16 +470,12 @@ footer {
 
 /* Media Queries */
 
-/* Navlist Mobile-sized screens */
+/* Navlist Desktop-sized screens */
 @media screen and (max-width: 760px) {
 
   .navlist {
     flex-direction: column;
     text-align: center;
-  }
-
-  .navlist li {
-    margin: 0;
   }
 
   .navlist li:not(:last-child) {
@@ -496,7 +498,7 @@ footer {
   .navlist {
     display: flex;
     justify-content: space-around;
-    margin: 10px 40px;
+    margin: 10px 0px;
   }
 
   .container {
@@ -682,6 +684,7 @@ footer {
   .find {
     width: 250px;
   }
+  
   
 
 }
