@@ -14,11 +14,12 @@ a {
 
 a:hover {
   color: #f0f0f0;
-  background-color: #bd002d;
+  background-color: #ddb260;
+  padding: 20px 50px;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -55,17 +56,18 @@ header {
   padding: 20px;
 }
 
-.logo {
+/* .logo {
   background-color: #001d2e;
   padding: 10px;
-}
+} */
 
-.logo img {
+/* .logo img {
   width: 100%;
   height: auto;
   max-width: 100%;
-  margin: 0 auto; /* Center the logo image */
-}
+  margin: 0 auto;
+  /* Center the logo image */
+
 
 .navlist {
   text-align: center;
@@ -90,6 +92,7 @@ nav ul li {
 }
 
 .find {
+  width: 100%;
   display: flex;
   align-items: center;
   border: 2px solid #ddb260;
@@ -133,21 +136,24 @@ nav ul li {
   margin-right: 5px;
 }
 
+.search-wrapper {
+  width: 100%;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-logo {
+  width: 100%;
+  background-color: #ddb260;
 }
 
-.logo img {
+/* .logo img {
   width: 80px;
-}
+} */
 
 /* Adjust the search form */
 nav form {
@@ -168,7 +174,7 @@ nav form input[type="search"] {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  margin: 0; /* Added margin: 0 to remove spacing */
+  margin: 0;
   background-image: url(../images/banner.jpg);
   background-position: center;
   background-size: cover;
@@ -187,7 +193,7 @@ nav form input[type="search"] {
 .welcome img {
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: none;
 }
 
 .welcome-content {
@@ -209,7 +215,8 @@ nav form input[type="search"] {
   margin: 0;
 }
 
-.welcome h1, .welcom p {
+.welcome h1,
+.welcom p {
   margin-bottom: 20px;
 }
 
@@ -234,65 +241,70 @@ nav form input[type="search"] {
 .about {
   background-color: #ddb260;
   padding: 30px 20px;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+/*   max-width: 100%;
   position: relative;
   display: block;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0px; */
 }
 
 .about img {
   width: 100%;
-  max-width: 550px;
-  margin-right: 0px;
-  display: block;
+  padding-bottom: 10px;
 }
 
 .abouttext h2 {
-  margin: 0 0 15px;
-}
+ padding-bottom: 10px;
+} 
 
-.abouttext p {
+/* .about img {
+  width: 100%;
+  max-width: 550px;
+  margin-right: 0px;
+  display: block;
+} */
+/* 
+
+
+/* .abouttext p {
   margin-bottom: 15px;
-}
+} */
 
-.wrapper-about {
+/* .wrapper-about {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
+} */
+/* 
 .about img {
   max-width: 40%;
   width: max-content;
-}
-
+} */
+/* 
 .abouttext {
   flex: 1;
-}
+} */
 
-.float img {
+/* .float img {
   padding-bottom: 0;
-}
+} */
 
-.float{
+/* .float {
   width: 50%;
   float: left;
   padding-right: 5px;
-}
+} */
 
-.aboutus::after{
+/* .aboutus::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
 /* Services Section */
 .services {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -304,36 +316,41 @@ nav form input[type="search"] {
 }
 
 .serviceboxes {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  gap: 20px; */
 }
 
-.reservations{
+.block-area {
+  background-color: #ddb260;
+  margin: 8px;
+}
+
+.reservations {
   grid-column: 1 / span 3;
   margin-right: 5px;
 }
 
-.chef{
+.chef {
   grid-column: 4 / span 3;
   margin-right: 5px;
 }
 
-.experience{ 
+.experience {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
   margin-right: 5px;
 }
 
-.expertise{
+.expertise {
   grid-column: 3 / span 2;
   grid-row: 2 / span 2;
   margin-right: 3px;
   margin-left: 3px;
 }
 
-.sake{
+.sake {
   grid-column: 5 / span 2;
   grid-row: 2 / span 2;
   margin-left: 6px;
@@ -348,39 +365,43 @@ nav form input[type="search"] {
 }
 
 .reservations .chef .experience .expertise .sake {
-  background-color: #ddb260; 
+  background-color: #ddb260;
   margin-top: 10px;
 }
 
 .serviceboxes h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 15px 0;
   padding: 10px;
 }
 
 .serviceboxes p {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
   padding: 10px;
 }
 
 .serviceboxes button {
   background-color: #1c1c1c;
   color: #f9f8f2;
-  font-family: 'quicksand';
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
   padding: 10px 20px;
   cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .serviceboxes button:hover {
-  background-color: #ddb260;
-  color: #70001a;
+  background-color: #70001a;
+
 }
 
 /* Vision Section */
 .vision {
-  background-color: #591918;
+  background-image: url(../images/vision.jpeg);
+  background-position: center;
+  background-size: cover;
   padding: 30px;
   color: #f9f8f2;
   text-align: center;
@@ -405,31 +426,7 @@ nav form input[type="search"] {
   text-align: center;
 }
 
-#ourteam {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-  "chef1 chefbio"
-  "chefbio2 chef2";
-  gap: 20px;
-}
 
-#ourteam img {
-  width: 100%;
-  max-width: 100%;
-}
-
-#ourteam .ourteam {
-  display: flex;
-  align-items: center;
-}
-
-.chefbio .chefbio2 {
-  flex-grow: 1;
-  color: #1c1c1c;
-  padding: 20px 5px;
-}
 
 .ourteam h3 {
   font-size: 2.5rem;
@@ -446,6 +443,11 @@ nav form input[type="search"] {
   margin-bottom: 15px;
 }
 
+#ourteam img {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* Contact Section */
 .contact {
   background-color: #f9f8f2;
@@ -458,9 +460,7 @@ nav form input[type="search"] {
 }
 
 .info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 60px;
 }
 
 .message form {
@@ -477,14 +477,14 @@ nav form input[type="search"] {
 .message textarea {
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #591918;
+  border: 2px solid #1c1c1c;
   border-radius: 5px;
   font-size: 0.9rem;
 }
 
 .message button {
-  border: 1px solid #591918;
-  background-color: #591918;
+  border: 1px solid #1c1c1c;
+  background-color: #1c1c1c;
   color: #f9f8f2;
   font-family: 'quicksand';
   font-size: 1rem;
@@ -506,13 +506,13 @@ nav form input[type="search"] {
 
 .business-hour th,
 .business-hour td {
-  border: 1px solid #591918;
+  border: 1px solid #1c1c1c;
   padding: 10px;
   text-align: center;
 }
 
 .business-hour th {
-  background-color: #591918;
+  background-color: #1c1c1c;
   color: #f9f8f2;
 }
 
@@ -526,9 +526,17 @@ nav form input[type="search"] {
   height: 86%;
 }
 
+
+
+
+/* Styling for text input fields */
+input[type=text] {
+  height: 28px;
+}
+
 /* Footer */
 footer {
-  background-color: #591918;
+  background-color: #1c1c1c;
   color: #f9f8f2;
   text-align: center;
   padding: 10px;
@@ -538,6 +546,7 @@ footer {
 
 /* Navlist Mobile-sized screens */
 @media screen and (max-width: 760px) {
+
   /* Make the navigation list vertical */
   .navlist {
     flex-direction: column;
@@ -551,57 +560,67 @@ footer {
   .navlist li:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .header-logo {
+    width: 98px;
+    height: 98px;
+    width: 100%; 
+    justify-content: flex-start;
+    padding: 10px; 
+  }
+
 }
 
 /* Navlist Desktop-sized screens */
-@media screen and (min-width: 760px){
-.navlist {
+@media screen and (min-width: 760px) {
+  .navlist {
     display: flex;
     justify-content: space-around;
     margin: 10px 40px;
   }
 
-.container {
+  .container {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     padding: 40px 10px;
-}
+  }
+
+  .header-logo {
+    width: auto;
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+  }
+
 }
 
-/* About section mobile-sized screens */
+/* About section destop-sized screens */
 @media screen and (max-width: 760px) {
   .wrapper {
     flex-direction: column;
     gap: 10px;
   }
-
-  .about img {
-    max-width: 100%;
-  }
-
-  /* Reset the order on mobile to stack the elements correctly */
-  .abouttext p {
-    order: 0;
-  }
 }
 
-/* About Desktop-sized screens */
+/* About mobile-sized screens */
 @media screen and (min-width: 760px) {
-  .wrapper-about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .float{
+    width: 50%;
+    float: left;
+    margin: 1rem;
   }
 
-  .about img {
-    max-width: 40%;
-    width: max-content;
+  .float img{
+    padding-bottom: 0;
   }
 
-  .abouttext {
-    flex: 1;
-  }
+.aboutus::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 }
 
 /* Large screens */
@@ -611,3 +630,141 @@ footer {
     padding: 10px;
   }
 }
+
+
+
+@media screen and (min-width: 760px) {
+
+  /* Apply grid layout to service boxes section */
+  .serviceboxes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+
+  /* Specify grid layout for individual service boxes within the service boxes section */
+  .reservations {
+    grid-column: 1 / span 3;
+    margin-right: 5px;
+  }
+
+  .chef {
+    grid-column: 4 / span 3;
+    margin-left: 5px;
+  }
+
+  .experience {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    margin-right: 6px;
+  }
+
+  .expertise {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .sake {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 2;
+    margin-left: 6px;
+  }
+
+  /* Specify width for h3 headings within service boxes */
+  .serviceboxes h3 {
+    width: max-content;
+  }
+
+  /* Apply grid layout to contact section info */
+  .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 270px 170px;
+    grid-template-areas:
+      "message message location location"
+      "hours hours hours hours";
+  }
+
+  /* Specify grid area for contact message form */
+  .message {
+    grid-area: message;
+    width: auto;
+  }
+
+  /* Adjust width of input fields and textareas within the contact message form */
+  .message form input,
+  .message form textarea {
+    width: 98%;
+  }
+
+  /* Specify grid area for contact hours */
+  .business-hour {
+    grid-area: hours;
+    margin-top: 1rem;
+  }
+
+  /* Align location map to the left within the contact section */
+  .location {
+    grid-area: location;
+    text-align: left;
+  }
+
+  /* Adjust size of Google Maps iframe within the contact section */
+  .location iframe {
+    width: 98%;
+    height: 86%;
+  }
+
+  #ourteam {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "chef1 chefbio"
+      "chefbio2 chef2";
+    gap: 20px;
+  }
+
+  /* Specify grid area for individual team member elements */
+  .chef1 {
+    grid-area: chef1;
+    padding-top: 0;
+  }
+
+  .chefbio {
+    grid-area: chefbio;
+    padding: 10px 10px;
+  }
+
+  .chef2 {
+    grid-area: chef2;
+    padding-top: 0;
+  }
+
+  .chefbio2 {
+    grid-area: chefbio2;
+    padding: 10px 10px;
+  }
+
+
+
+  #ourteam .ourteam {
+    display: flex;
+    align-items: center;
+  }
+
+  .chefbio .chefbio2 {
+    flex-grow: 1;
+    color: #1c1c1c;
+    padding: 20px 5px;
+  }
+  .find {
+    width: 250px;
+  }
+  
+
+}
+
