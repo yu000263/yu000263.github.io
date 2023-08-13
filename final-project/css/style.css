@@ -15,7 +15,7 @@ a {
 a:hover {
   color: #f0f0f0;
   background-color: #ddb260;
-  padding: 20px 50px;
+  padding: 10px 40px;
 }
 
 .container {
@@ -55,19 +55,6 @@ header {
   background-color: #1c1c1c;
   padding: 20px;
 }
-
-/* .logo {
-  background-color: #001d2e;
-  padding: 10px;
-} */
-
-/* .logo img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
-  /* Center the logo image */
-
 
 .navlist {
   text-align: center;
@@ -151,10 +138,6 @@ nav ul li {
   background-color: #ddb260;
 }
 
-/* .logo img {
-  width: 80px;
-} */
-
 /* Adjust the search form */
 nav form {
   display: flex;
@@ -187,26 +170,7 @@ nav form input[type="search"] {
 .welcome .wrapper {
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.welcome img {
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
-.welcome-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  height: 75%;
-  text-align: left;
-  color: #1c1c1c;
-  z-index: 1;
+  padding-bottom: 30px;
 }
 
 .welcome h1,
@@ -231,16 +195,18 @@ nav form input[type="search"] {
   font-size: 1rem;
 }
 
-.welcome-content button:hover {
-  background-color: white;
-  color: #70001a;
+.welcome button:hover {
+  background-color: #f5f5f5;
+  color: #1c1c1c;
 }
+
+
 
 
 /* About Section */
 .about {
   background-color: #ddb260;
-  padding: 30px 20px;
+  padding: 30px;
 /*   max-width: 100%;
   position: relative;
   display: block;
@@ -258,68 +224,15 @@ nav form input[type="search"] {
  padding-bottom: 10px;
 } 
 
-/* .about img {
-  width: 100%;
-  max-width: 550px;
-  margin-right: 0px;
-  display: block;
-} */
-/* 
-
-
-/* .abouttext p {
-  margin-bottom: 15px;
-} */
-
-/* .wrapper-about {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-} */
-/* 
-.about img {
-  max-width: 40%;
-  width: max-content;
-} */
-/* 
-.abouttext {
-  flex: 1;
-} */
-
-/* .float img {
-  padding-bottom: 0;
-} */
-
-/* .float {
-  width: 50%;
-  float: left;
-  padding-right: 5px;
-} */
-
-/* .aboutus::after {
-  content: "";
-  display: block;
-  clear: both;
-} */
-
 /* Services Section */
 .services {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
 .services h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.serviceboxes {
-  /* display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px; */
+  margin-bottom: 5px;
 }
 
 .block-area {
@@ -329,18 +242,18 @@ nav form input[type="search"] {
 
 .reservations {
   grid-column: 1 / span 3;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .chef {
   grid-column: 4 / span 3;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .experience {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .expertise {
@@ -353,7 +266,7 @@ nav form input[type="search"] {
 .sake {
   grid-column: 5 / span 2;
   grid-row: 2 / span 2;
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 .serviceboxes .reservations img,
@@ -364,10 +277,6 @@ nav form input[type="search"] {
   width: 100%;
 }
 
-.reservations .chef .experience .expertise .sake {
-  background-color: #ddb260;
-  margin-top: 10px;
-}
 
 .serviceboxes h3 {
   font-size: 2rem;
@@ -394,7 +303,6 @@ nav form input[type="search"] {
 
 .serviceboxes button:hover {
   background-color: #70001a;
-
 }
 
 /* Vision Section */
@@ -404,13 +312,27 @@ nav form input[type="search"] {
   background-size: cover;
   padding: 30px;
   color: #f9f8f2;
-  text-align: center;
+  text-align: left;
 }
 
 .vision img {
   width: 100%;
   max-width: 600px;
   height: 250px;
+}
+
+.vision button {
+  background-color: #1c1c1c;
+  color: #f9f8f2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.vision button:hover {
+  background-color: #70001a;
 }
 
 /* Team Section */
@@ -425,8 +347,6 @@ nav form input[type="search"] {
   margin-bottom: 15px;
   text-align: center;
 }
-
-
 
 .ourteam h3 {
   font-size: 2.5rem;
@@ -526,9 +446,6 @@ nav form input[type="search"] {
   height: 86%;
 }
 
-
-
-
 /* Styling for text input fields */
 input[type=text] {
   height: 28px;
@@ -547,7 +464,6 @@ footer {
 /* Navlist Mobile-sized screens */
 @media screen and (max-width: 760px) {
 
-  /* Make the navigation list vertical */
   .navlist {
     flex-direction: column;
     text-align: center;
@@ -571,7 +487,8 @@ footer {
 
 }
 
-/* Navlist Desktop-sized screens */
+/* Navlist Mobile-sized screens */
+/* Make the navigation list vertical */
 @media screen and (min-width: 760px) {
   .navlist {
     display: flex;
@@ -595,7 +512,7 @@ footer {
 
 }
 
-/* About section destop-sized screens */
+/* About Desktop-sized screens */
 @media screen and (max-width: 760px) {
   .wrapper {
     flex-direction: column;
@@ -605,7 +522,7 @@ footer {
 
 /* About mobile-sized screens */
 @media screen and (min-width: 760px) {
-
+/* Image float layout */
   .float{
     width: 50%;
     float: left;
@@ -616,26 +533,25 @@ footer {
     padding-bottom: 0;
   }
 
-.aboutus::after{
-  content: "";
-  display: block;
-  clear: both;
+  .aboutus::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 }
 
-/* Large screens */
+/* Main body mobile-sized screens */
+
 @media screen and (min-width: 760px) {
+
+
+  /* Heading style */
   h1 {
     font-size: 4rem;
     padding: 10px;
   }
-}
 
-
-
-@media screen and (min-width: 760px) {
-
-  /* Apply grid layout to service boxes section */
+  /* Grid layout for service boxes */
   .serviceboxes {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -643,7 +559,7 @@ footer {
   }
 
 
-  /* Specify grid layout for individual service boxes within the service boxes section */
+  /* Specify Grid layout for service boxes */
   .reservations {
     grid-column: 1 / span 3;
     margin-right: 5px;
@@ -673,12 +589,12 @@ footer {
     margin-left: 6px;
   }
 
-  /* Specify width for h3 headings within service boxes */
+  /* Styling H3 headings in service boxes */
   .serviceboxes h3 {
     width: max-content;
   }
 
-  /* Apply grid layout to contact section info */
+  /* Grid layout for contact info */
   .info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -688,36 +604,37 @@ footer {
       "hours hours hours hours";
   }
 
-  /* Specify grid area for contact message form */
+  /* Specify Grid layout for message */
   .message {
     grid-area: message;
     width: auto;
   }
 
-  /* Adjust width of input fields and textareas within the contact message form */
+  /* Styling and textareas for message */
   .message form input,
   .message form textarea {
     width: 98%;
   }
 
-  /* Specify grid area for contact hours */
+  /* Specify Grid area for operation hours */
   .business-hour {
     grid-area: hours;
     margin-top: 1rem;
   }
 
-  /* Align location map to the left within the contact section */
+  /* Align map to the left in the contact section */
   .location {
     grid-area: location;
     text-align: left;
   }
 
-  /* Adjust size of Google Maps iframe within the contact section */
+  /* Google Maps Size */
   .location iframe {
     width: 98%;
     height: 86%;
   }
 
+  /* Grid area for ourteam */
   #ourteam {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -728,7 +645,7 @@ footer {
     gap: 20px;
   }
 
-  /* Specify grid area for individual team member elements */
+  /* Specify Grid layout for chef1 & chef2 */
   .chef1 {
     grid-area: chef1;
     padding-top: 0;
@@ -748,8 +665,6 @@ footer {
     grid-area: chefbio2;
     padding: 10px 10px;
   }
-
-
 
   #ourteam .ourteam {
     display: flex;
